@@ -1,0 +1,14 @@
+.team-list{
+    display: flex;
+    justify-content: center;
+}
+
+.team-list__item{
+
+    &:not(:last-child){
+    margin-right: 30px;
+    }
+
+    background-color:var(--contrast-color);
+}
+

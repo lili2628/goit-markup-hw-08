@@ -1,0 +1,37 @@
+.page-header{
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-header__container {
+    display: flex;
+    align-items: center;
+}
+
+.page-header__contacts{
+    display: flex;
+    margin-left: auto;
+}
+
+.page-header__mail-phone {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--page-main-color);
+
+    &:not(:last-child){
+        margin-right: 50px;
+    }
+}
+
+.page-header__icon{
+    margin-right: 10px;
+
+    transition: fill 250ms var(--function-timing);
+
+    fill:var(--page-main-color);
+
+    .page-header__mail-phone:hover &,
+    .page-header__mail-phone:focus &{
+        fill: var(--accent-color);
+    }
+}

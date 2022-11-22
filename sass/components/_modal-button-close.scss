@@ -1,0 +1,26 @@
+.button-close {
+    transition: fill 250ms var(--function-timing);
+
+    position: absolute;
+    right: 8px;
+    top: 8px;
+
+    width: 30px;
+    height: 30px;
+    padding: 0;
+
+    background: var(--contrast-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.button-close__icon{
+    fill: #000000;
+
+    .button-close:hover &,
+    .button-close:hover &{
+    fill: var(--accent-color)
+    }
+}
+

@@ -1,0 +1,7 @@
+.activities{
+    padding-top: 0;
+}
+
+.activities__title{
+    @extend %title-style;
+}

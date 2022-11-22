@@ -1,0 +1,8 @@
+.mailing{
+
+}
+
+.mailing__text {
+    @extend %text-style;
+    @extend %footer-text;
+}

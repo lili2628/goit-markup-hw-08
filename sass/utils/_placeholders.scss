@@ -1,0 +1,40 @@
+%buttons-style{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    align-items: center;
+
+    color: var(--contrast-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    line-height: 1.88;
+}
+
+%text-style{
+    margin-top: 0;
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase; 
+}
+
+%title-style{
+    margin-top: 0;
+    margin-bottom: 50px;
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    color: var(--additional-page-color);
+}
+
+%footer-text{
+    display: inline-block;
+    margin-bottom: 26px;
+
+    color: var(--contrast-color);
+}

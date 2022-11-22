@@ -1,0 +1,42 @@
+.modal-window--hidden {
+    transform: translate(-50%, -50%) scale(0.15);
+    opacity: 0;
+    visibility: 0;
+}
+
+.modal-window{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms var(--function-timing), 
+    opacity 250ms var(--function-timing),
+    visibility 250ms var(--function-timing);
+
+    min-width: 528px;
+    min-height: 580px;
+    padding-left: 41px;
+    padding-right: 39px;
+    padding-top: 42px;
+    padding-bottom: 39px;
+
+    background-color: var(--contrast-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal-window__title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+
+    color: var(--additional-page-color);
+}

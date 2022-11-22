@@ -1,0 +1,7 @@
+.team {
+    background-color: #F5F4FA;
+}
+
+.team__title{
+    @extend %title-style;
+}
