@@ -154,6 +154,11 @@
 
     margin-bottom: 32px;
     padding: 0;
+
+    @media screen and (max-width: 479px) {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
 }
 
 .page-header__mail{
@@ -165,6 +170,11 @@
     margin-bottom: 64px;
 
     color: var(--page-main-color);
+
+    @media screen and (max-width: 479px) {
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
 }
 
 .page-header__icon{

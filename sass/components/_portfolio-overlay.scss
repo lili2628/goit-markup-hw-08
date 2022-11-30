@@ -13,9 +13,14 @@
         }
     
 
-    color: var(--contrast-color);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
+        color: var(--contrast-color);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.56;
+
+        @media screen and (max-width: 349px) {
+            font-size: 12px;
+            width: 250px;
+        }
     }
 }

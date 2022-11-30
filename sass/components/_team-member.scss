@@ -22,6 +22,10 @@
 
 .team-member__photo{
     display: block;
+
+    @media screen and (max-width: 479px) {
+        max-width: 100%;
+    }
 }
 
 .team-member__description{

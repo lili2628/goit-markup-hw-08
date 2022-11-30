@@ -32,6 +32,10 @@
     display: block;
     margin-bottom: 0;
     margin-top: 0;
+
+    @media screen and (max-width: 479px) {
+        max-width: 100%;
+    }
 }
 
 .project__description{
