@@ -1,14 +1,20 @@
 .features-list{
-    display: flex;
+    @extend %set-flex;
 }
 
-.features-list__item:not(:last-child){
-    margin-right: 30px;
+.features-list__item{
+    @extend %item-set-flex;
+
+    &:not(:last-child){
+        @extend %set-margin;
+    }
 }
+
+
 
 .features-list__picture{
-    width: 270px;
-    height: 120px;
+    background-color: #F5F4FA;
+    
     margin-bottom: 30px;
     text-align: center;
     display: flex;
@@ -16,7 +22,19 @@
     align-items: center;
     border-radius: 4px;
 
-    background-color: #F5F4FA;
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 120px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+    
 }
 
 

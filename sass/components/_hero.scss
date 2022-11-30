@@ -1,31 +1,82 @@
 .hero{
-    max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
 
     background-color: #2F303A;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: center, center;
+    background-position: center, center; 
+    background-size: cover;
+
+    
+
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero@1x_phone.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero@2x_phone.jpg");   
+    }
+    
+
+
+    @media screen and (min-width: 768px){
+
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero@1x_tablet.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero@2x_tablet.jpg");   
+        }
+    }
+
+    @media screen and (min-width: 1200px){
+
+        height: 600px;
+       
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero@1x_desktop.jpg");
+
+        padding-top: 200px;
+        padding-bottom: 200px;
+        max-width: 1600px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero@2x_desktop.jpg");   
+        }
+    }
+
+    
 
 }
 
 .hero__title{
-    width: 696px;
+    
     margin: 0 auto;
     margin-bottom: 30px;
 
+    @media screen and (min-width: 480px) {
+        width: 360px;
+    }
+
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     color: var(--contrast-color);
+
+    @media screen and (min-width: 1200px) {
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .hero__buttons{

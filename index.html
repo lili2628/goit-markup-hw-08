@@ -9,37 +9,85 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body class="page">
     
     <header class="page-header">
-        <div class="container page-header__container">
-            <nav class="flex-centered">
-                <a href="./index.html" class="logo">
-                    <span class="logo__first-part">Web</span>Studio</a>
+        <div class="container page-header__container page-header__nav">
+            
+            <a href="./index.html" class="logo">
+                <span class="logo__first-part">Web</span>Studio</a>
 
+            <button type="button" class="page-header__menu-button page-header__button-open js-open-menu"  aria-expanded="false" aria-controls="nav">
+                <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                    <use class="page-header__icon-open" href="./images/icons.svg#menu-open"></use>
+                </svg>
+            </button>
+
+
+            <div class="page-header__nav-thumb js-menu-container" id="nav">
+                
+                <button type="button" class="page-header__menu-button page-header__button-close js-close-menu"  aria-expanded="false" aria-controls="nav">
+                    <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                        <use class="page-header__icon-close" href="./images/icons.svg#menu-close"></use>
+                    </svg>
+                </button>
+                
                 <ul class="site-nav list-clear">
                     <li class="site-nav__item site-nav__item--current"><a class="link site-nav__link site-nav__link--current" href="./index.html">Студія</a></li>
                     <li class="site-nav__item"><a class="link site-nav__link" href="./portfolio.html">Портфоліо</a></li>
                     <li class="site-nav__item"><a class="link site-nav__link" href="#contact">Контакти</a></li>
                 </ul>
-            </nav>
+        
 
-            <div class="list-clear page-header__contacts">
-                
-                <a class="link page-header__mail-phone flex-centered" href="mailto:info@devstudio.com">
-                    <svg class="page-header__icon" width="16" height="12">
-                        <use href="./images/icons.svg#envelope"></use>
-                    </svg>
-                    info@devstudio.com
-                </a>
-                <a class="link page-header__mail-phone flex-centered" href="tel:+380961111111">
-                    <svg class="page-header__icon" width="10" height="16">
-                        <use href="./images/icons.svg#smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11
-                </a>
+                <div class="list-clear page-header__contacts-smartphone">
+                    <a class="link page-header__mail-phone page-header__phone" href="tel:+380961111111">
+                        <svg class="page-header__icon" width="10" height="16">
+                            <use href="./images/icons.svg#smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                    <a class="link page-header__mail-phone page-header__mail" href="mailto:info@devstudio.com">
+                        <svg class="page-header__icon" width="16" height="12">
+                            <use href="./images/icons.svg#envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                    
+                    <ul class="list-clear network-names">
+                        <li class="network-names__item">
+                            Instagram
+                        </li>
+                        <li class="network-names__item">
+                            Twitter
+                        </li>
+                        <li class="network-names__item">
+                            Facebook
+                        </li>
+                        <li class="network-names__item">
+                            LinkedIn
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="list-clear page-header__contacts">
+                    <a class="link page-header__mail-phone page-header__mail-phone--margin" href="mailto:info@devstudio.com">
+                        <svg class="page-header__icon" width="16" height="12">
+                            <use href="./images/icons.svg#envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                    <a class="link page-header__mail-phone" href="tel:+380961111111">
+                        <svg class="page-header__icon" width="10" height="16">
+                            <use href="./images/icons.svg#smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </div>
+
             </div>
+            
         </div>
     </header>
 
@@ -119,8 +167,12 @@
                 <ul class="activities-list list-clear">
                     <li class="activities-list__item">
                         <div class="activities-list__thumb">
-                            <img class="activities-list__picture" src="./images/act1.jpg" 
-                            alt="Створення додатків для лептопів" width="370">
+                            <img class="activities-list__picture"
+                                srcset="./images/activity/activity@1x.jpg 1x, ./images/activity/activity@2x.jpg 2x"
+                                src="./images/activity/activity@1x.jpg"
+                                alt="Створення додатків для лептопів"
+                                width="370"
+                            />
                             <p class="activities-list__text">
                                 декстопні додатки
                             </p>
@@ -128,8 +180,12 @@
                     </li>
                     <li class="activities-list__item">
                         <div class="activities-list__thumb">
-                            <img class="activities-list__picture" src="./images/act2.jpg" 
-                            alt="Створення додатків для телефонів" width="370">
+                            <img class="activities-list__picture"
+                                srcset="./images/activity/activity@1x-1.jpg 1x, ./images/activity/activity@2x-1.jpg 2x"
+                                src="./images/activity/activity@1x-1.jpg"
+                                alt="Створення додатків для телефонів"
+                                width="370"
+                            />
                             <p class="activities-list__text">
                                 мобільні додатки
                             </p>
@@ -137,8 +193,12 @@
                     </li>
                     <li class="activities-list__item">
                         <div class="activities-list__thumb">
-                            <img class="activities-list__picture" src="./images/act3.jpg" 
-                            alt="Створення дизайну" width="370">
+                            <img class="activities-list__picture"
+                                srcset="./images/activity/activity@1x-2.jpg 1x, ./images/activity/activity@2x-2.jpg 2x"
+                                src="./images/activity/activity@1x-2.jpg"
+                                alt="Створення дизайну"
+                                width="370"
+                            />
                             <p class="activities-list__text">
                                 дизайнерські рішення
                             </p>
@@ -154,9 +214,19 @@
                 <ul class="team-list list-clear">
                     <li class="team-list__item"> 
                         <div class="container team-member">
-                            <img class="team-member__photo" src="./images/photo1.jpg" 
-                            alt="фото продактдизайнера Ігоря Дем'яненка" 
-                            width="270">
+
+                            <img class="team-member__photo" 
+                                srcset="
+                                    ./images/team/team@1x_phone.jpg 450w,
+                                    ./images/team/team@2x_phone.jpg 900w, 
+                                    ./images/team/team@1x_tablet.jpg 354w,
+                                    ./images/team/team@2x_tablet.jpg 708w,
+                                    ./images/team/team@1x_desktop.jpg 270w,
+                                    ./images/team/team@2x_desktop.jpg 540w"
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="./images/team/team@1x_phone.jpg"
+                                alt="фото продактдизайнера Ігоря Дем'яненка"
+                            />
                             <div class="team-member__description">
                                 <h3 class="team-member__name">Ігор Дем'яненко</h3>
                                 <p class="team-member__position" lang="en">
@@ -197,9 +267,18 @@
                     </li>
                     <li class="team-list__item">
                         <div class="container team-member">
-                            <img class="team-member__photo" src="./images/photo2.jpg" 
-                            alt="фото розробника Ольги Рєпіної" 
-                            width="270">
+                            <img class="team-member__photo" 
+                                srcset="
+                                        ./images/team/team@1x_phone-1.jpg 450w,
+                                        ./images/team/team@2x_phone-1.jpg 900w, 
+                                        ./images/team/team@1x_tablet-1.jpg 354w,
+                                        ./images/team/team@2x_tablet-1.jpg 708w,
+                                        ./images/team/team@1x_desktop-1.jpg 270w,
+                                        ./images/team/team@2x_desktop-1.jpg 540w"
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="./images/team/team@1x_phone-1.jpg"
+                                alt="фото продактдизайнера Ольга Рєпіна"
+                            />
                             <div class="team-member__description">
                                 <h3 class="team-member__name">Ольга Рєпіна</h3>
                                 <p class="team-member__position" lang="en">
@@ -240,9 +319,18 @@
                     </li>
                     <li class="team-list__item">
                         <div class="container team-member">
-                            <img class="team-member__photo" src="./images/photo3.jpg" 
-                            alt="фото маркетолога Миколи Тарасова" 
-                            width="270">
+                            <img class="team-member__photo" 
+                                srcset="
+                                        ./images/team/team@1x_phone-2.jpg 450w,
+                                        ./images/team/team@2x_phone-2.jpg 900w, 
+                                        ./images/team/team@1x_tablet-2.jpg 354w,
+                                        ./images/team/team@2x_tablet-2.jpg 708w,
+                                        ./images/team/team@1x_desktop-2.jpg 270w,
+                                        ./images/team/team@2x_desktop-2.jpg 540w"
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="./images/team/team@1x_phone-2.jpg"
+                                alt="фото продактдизайнера Микола Тарасов"
+                            />
                             <div class="team-member__description">
                                 <h3 class="team-member__name">Микола Тарасов</h3>
                                 <p class="team-member__position" lang="en">
@@ -283,9 +371,18 @@
                     </li>
                     <li class="team-list__item">
                         <div class="container team-member">
-                            <img  class="team-member__photo" src="./images/photo4.jpg" 
-                            alt="фото вебдизайнера Михайла Єрмакова" 
-                            width="270">
+                            <img  class="team-member__photo" 
+                                srcset="
+                                        ./images/team/team@1x_phone-3.jpg 450w,
+                                        ./images/team/team@2x_phone-3.jpg 900w, 
+                                        ./images/team/team@1x_tablet-3.jpg 354w,
+                                        ./images/team/team@2x_tablet-3.jpg 708w,
+                                        ./images/team/team@1x_desktop-3.jpg 270w,
+                                        ./images/team/team@2x_desktop-3.jpg 540w"
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                                src="./images/team/team@1x_phone-3.jpg"
+                                alt="фото продактдизайнера Михайло Єрмаков"
+                            />
                             <div class="team-member__description">
                                 <h3 class="team-member__name">Михайло Єрмаков</h3>
                                 <p class="team-member__position" lang="en">
@@ -382,53 +479,55 @@
 
     <footer class="page-footer">
         <div class="container page-footer__container">
-            <div>
-                <a href="./index.html" class="logo page-footer__logo">
-                    <span class="logo__first-part">Web</span>Studio</a>
+            <div class="page-footer__tablet">
+                <div class="page-footer__thumb">
+                    <a href="./index.html" class="logo page-footer__logo">
+                        <span class="logo__first-part">Web</span>Studio</a>
 
-                <address id="contact" class="page-footer__address">
-                    <span class="page-footer__physical-address">м. Київ, пр-т Лесі Українки, 26 </span>
-                    <a class="page-footer__mail-phone" href="mailto:info@devstudio.com">
-                        info@devstudio.com
-                    </a>
-                    <a class="page-footer__mail-phone page-footer__mail-phone--last" href="tel:+380961111111">
-                        +38 096 111 11 11
-                    </a>
-                </address>
-            </div>
+                    <address id="contact" class="page-footer__address">
+                        <span class="page-footer__physical-address">м. Київ, пр-т Лесі Українки, 26 </span>
+                        <a class="page-footer__mail-phone" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                        <a class="page-footer__mail-phone page-footer__mail-phone--last" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </address>
+                </div>
 
-            <div class="community">
-                <span class="community__text">приєднуйтесь</span>
-                <ul class="list-clear network-list">
-                    <li class="network-list__item">
-                        <a class="network-list__link network-list__link--dark flex-centered" href="">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#instagram" class="network-list__symbol network-list__symbol--contrast"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="network-list__item">
-                        <a class="network-list__link network-list__link--dark flex-centered" href="">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#twitter" class="network-list__symbol network-list__symbol--contrast"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="network-list__item"> 
-                        <a class="network-list__link network-list__link--dark flex-centered" href="">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#facebook" class="network-list__symbol network-list__symbol--contrast"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="network-list__item">
-                        <a class="network-list__link network-list__link--dark flex-centered" href="">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#linkedin" class="network-list__symbol network-list__symbol--contrast"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                <div class="community">
+                    <span class="community__text">приєднуйтесь</span>
+                    <ul class="list-clear network-list network-list--centered">
+                        <li class="network-list__item">
+                            <a class="network-list__link network-list__link--dark flex-centered" href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#instagram" class="network-list__symbol network-list__symbol--contrast"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="network-list__item">
+                            <a class="network-list__link network-list__link--dark flex-centered" href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#twitter" class="network-list__symbol network-list__symbol--contrast"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="network-list__item"> 
+                            <a class="network-list__link network-list__link--dark flex-centered" href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#facebook" class="network-list__symbol network-list__symbol--contrast"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="network-list__item">
+                            <a class="network-list__link network-list__link--dark flex-centered" href="">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#linkedin" class="network-list__symbol network-list__symbol--contrast"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="mailing">
@@ -507,5 +606,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,4 +1,6 @@
 .agree{
+
+    position: relative;
     text-align: center;
     margin-bottom: 30px;
     
@@ -7,10 +9,11 @@
     line-height: 1.7;
 
     color: var(--page-main-color);
+
 }
 
 .agree__text{
-    display: inline-block;
+    display: block;
     padding-left: 12px;
 }
 
@@ -23,19 +26,46 @@
 }
 
 .agree__cell{
+
     position: absolute;
-    left: 57px;
+    top: 3px;
     opacity: 1;
+    left: 0;
 
     display: inline-block;
+
+    
     width: 16px;
     height: 15px;
+    
+    
 
     border: 2px solid #000000;
     border-radius: 2px;
     background-color: var(--contrast-color);
 
     pointer-events: none;
+
+    @media screen and (min-width: 360px) {
+        left: 12px;
+    }
+
+    @media screen and (min-width: 392px) {
+        left: 0px;
+    }
+
+    @media screen and (min-width: 440px) {
+        left: 15px;
+    }
+
+    @media screen and (min-width: 480px) {
+        left: 37px;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        left: 15px;
+    }
 
     .agree__input:checked ~ &{
         opacity: 0;
@@ -44,8 +74,29 @@
 
 .agree__icon{
     position: absolute;
-    left: 57px;
+    top: 3px;
     opacity: 0;
+    left: 0;
+
+    @media screen and (min-width: 360px) {
+        left: 12px;
+    }
+
+    @media screen and (min-width: 392px) {
+        left: 0px;
+    }
+
+    @media screen and (min-width: 440px) {
+        left: 15px;
+    }
+
+    @media screen and (min-width: 480px) {
+        left: 37px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 15px;
+    }
 
     background-color: var(--accent-color);
     border-radius: 2px;

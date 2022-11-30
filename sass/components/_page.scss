@@ -6,4 +6,8 @@
     font-family: var(--main-font-family);
     font-size: 16px;
     letter-spacing: 0.03em;  
+
+    &.modal-open{
+        overflow: hidden;
+    }
 }

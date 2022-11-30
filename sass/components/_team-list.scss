@@ -1,14 +1,17 @@
 .team-list{
-    display: flex;
-    justify-content: center;
+    @extend %set-flex;
+    
+    @media screen and (min-width: 1200px){
+        justify-content: center;
+    }
 }
 
 .team-list__item{
+    @extend %item-set-flex;
+    background-color:var(--contrast-color);
 
     &:not(:last-child){
-    margin-right: 30px;
+        @extend %set-margin;
     }
-
-    background-color:var(--contrast-color);
 }
 
