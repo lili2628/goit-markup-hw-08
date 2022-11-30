@@ -224,8 +224,8 @@
 }
 @media screen and (max-width: 479px) {
   .page-header__phone {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 16px;
   }
 }
 
@@ -307,7 +307,7 @@
 }
 @media screen and (max-width: 479px) {
   .network-names__item {
-    font-size: 12px;
+    font-size: 10px;
   }
   .network-names__item:not(:last-child) {
     padding-right: 5px;
