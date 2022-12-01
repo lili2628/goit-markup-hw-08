@@ -15,6 +15,19 @@
 .agree__text{
     display: block;
     padding-left: 12px;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 10px;
+    }
+
+
+    @media screen and (max-width: 479px) {
+        font-size: 9px;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 6px;
+    }
 }
 
 
@@ -46,20 +59,18 @@
 
     pointer-events: none;
 
-    @media screen and (min-width: 360px) {
-        left: 12px;
-    }
+    
 
-    @media screen and (min-width: 392px) {
-        left: 0px;
+    @media screen and (max-width: 479px) {
+        left: 1px;
     }
-
-    @media screen and (min-width: 440px) {
-        left: 15px;
+    @media screen and (max-width: 400px) {
+        left: 30px;
+        top: 0;
     }
 
     @media screen and (min-width: 480px) {
-        left: 37px;
+        left: 27px;
     }
 
 
@@ -78,20 +89,19 @@
     opacity: 0;
     left: 0;
 
-    @media screen and (min-width: 360px) {
-        left: 12px;
+    
+
+    @media screen and (max-width: 479px) {
+        left: 1px;
     }
 
-    @media screen and (min-width: 392px) {
-        left: 0px;
-    }
-
-    @media screen and (min-width: 440px) {
-        left: 15px;
+    @media screen and (max-width: 400px) {
+        left: 30px;
+        top: 0;
     }
 
     @media screen and (min-width: 480px) {
-        left: 37px;
+        left: 27px;
     }
 
     @media screen and (min-width: 1200px) {

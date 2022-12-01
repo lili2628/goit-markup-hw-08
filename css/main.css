@@ -84,6 +84,12 @@
 .page-header {
   border-bottom: 1px solid #ECECEC;
 }
+@media screen and (max-width: 767px) {
+  .page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .page-header__container {
@@ -193,6 +199,12 @@
 @media screen and (min-width: 768px) {
   .page-header__mail-phone {
     color: var(--page-main-color);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-header__mail-phone {
+    font-size: 12px;
+    line-height: 1.17;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -578,6 +590,11 @@
 .features-list__subtitle {
   margin-bottom: 10px;
   color: var(--additional-page-color);
+}
+@media screen and (max-width: 767px) {
+  .features-list__subtitle {
+    text-align: center;
+  }
 }
 
 .features-list__text {
@@ -1359,6 +1376,21 @@
   display: block;
   padding-left: 12px;
 }
+@media screen and (max-width: 1199px) {
+  .agree__text {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .agree__text {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .agree__text {
+    font-size: 6px;
+  }
+}
 
 .agree__link {
   display: inline-block;
@@ -1379,24 +1411,20 @@
   background-color: var(--contrast-color);
   pointer-events: none;
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 479px) {
   .agree__cell {
-    left: 12px;
+    left: 1px;
   }
 }
-@media screen and (min-width: 392px) {
+@media screen and (max-width: 400px) {
   .agree__cell {
-    left: 0px;
-  }
-}
-@media screen and (min-width: 440px) {
-  .agree__cell {
-    left: 15px;
+    left: 30px;
+    top: 0;
   }
 }
 @media screen and (min-width: 480px) {
   .agree__cell {
-    left: 37px;
+    left: 27px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1419,24 +1447,20 @@
   pointer-events: none;
   fill: var(--contrast-color);
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 479px) {
   .agree__icon {
-    left: 12px;
+    left: 1px;
   }
 }
-@media screen and (min-width: 392px) {
+@media screen and (max-width: 400px) {
   .agree__icon {
-    left: 0px;
-  }
-}
-@media screen and (min-width: 440px) {
-  .agree__icon {
-    left: 15px;
+    left: 30px;
+    top: 0;
   }
 }
 @media screen and (min-width: 480px) {
   .agree__icon {
-    left: 37px;
+    left: 27px;
   }
 }
 @media screen and (min-width: 1200px) {
